@@ -9,10 +9,8 @@ public class Session {
     private LocalTime endTime;
     private String status;
 
-    // Quan hệ n - 1 với Trainer
     private Trainer trainer;
 
-    // Quan hệ n - 1 với Package
     private Package pkg;
 
     public Session() {}

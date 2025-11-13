@@ -6,7 +6,6 @@ public class Account {
     private String salt;
     private String role;
 
-    // Quan hệ 1 - 1 với Trainer hoặc Staff
     private Trainer trainer;
     private Staff staff;
 

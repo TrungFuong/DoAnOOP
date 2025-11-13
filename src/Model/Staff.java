@@ -11,7 +11,6 @@ public class Staff {
     private String staffEmail;
     private String staffStatus;
 
-    // Quan hệ 1 - 1 với Account
     private Account account;
 
     public Staff() {}

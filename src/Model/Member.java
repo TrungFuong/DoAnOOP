@@ -13,7 +13,6 @@ public class Member {
     private String memberImages;
     private String memberStatus;
 
-    // Quan hệ 1 - n với MemberPackage
     private List<MemberPackage> memberPackages;
 
     public Member() {}

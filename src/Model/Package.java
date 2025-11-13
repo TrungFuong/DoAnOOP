@@ -10,10 +10,8 @@ public class Package {
     private String description;
     private Integer duration;
 
-    // Quan hệ n - n với Member (qua MemberPackage)
     private List<MemberPackage> memberPackages;
 
-    // Quan hệ n - n với Trainer (qua Sessions)
     private List<Session> sessions;
 
     public Package() {}
