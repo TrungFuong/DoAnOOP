@@ -7,7 +7,8 @@ create table Accounts
     AccountId varchar(20) primary key,
     AccountPw varchar(255),
     Salt      varchar(255),
-    Role      int
+    Role      int,
+    Sta       int default 1
 );
 
 create table Staffs
@@ -42,7 +43,8 @@ create table MembershipPackages
     PackageName        nvarchar(255),
     PackageDuration    int,
     PackagePrice       decimal(18, 2),
-    PackageDescription nvarchar(255)
+    PackageDescription nvarchar(255),
+    Sta                int default 1
 );
 
 create table Members
@@ -52,7 +54,8 @@ create table Members
     MemberPhone varchar(15),
     MemberDOB   date,
     MemberEmail varchar(50),
-    MemberImage varchar(255)
+    MemberImage varchar(255),
+    Sta         int default 1
 );
 
 create table Sess
@@ -90,8 +93,10 @@ create table PTPackages
     PackagePrice    decimal(18, 2),
     Description     nvarchar(255),
     TrainerId       varchar(20),
+    Sta             int default 1,
     foreign key (TrainerId) references Trainers (TrainerId)
 );
+
 
 create table MemberPTPackages
 (

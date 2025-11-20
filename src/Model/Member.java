@@ -7,17 +7,19 @@ public class Member {
     private Date memberDOB;
     private String memberEmail;
     private String memberImage;
+    private int sta; // trạng thái hội viên
 
     public Member() {}
 
     public Member(String memberId, String memberName, String memberPhone,
-                  Date memberDOB, String memberEmail, String memberImage) {
+                  Date memberDOB, String memberEmail, String memberImage, int sta) {
         this.memberId = memberId;
         this.memberName = memberName;
         this.memberPhone = memberPhone;
         this.memberDOB = memberDOB;
         this.memberEmail = memberEmail;
         this.memberImage = memberImage;
+        this.sta = sta;
     }
 
     public String getMemberId() {
@@ -66,5 +68,13 @@ public class Member {
 
     public void setMemberImage(String memberImage) {
         this.memberImage = memberImage;
+    }
+
+    public int getSta() {
+        return sta;
+    }
+
+    public void setSta(int sta) {
+        this.sta = sta;
     }
 }

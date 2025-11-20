@@ -5,17 +5,19 @@ public class PTPackage {
     private double packagePrice;
     private String description;
     private String trainerId;
+    private int sta; // trạng thái gói PT
 
     public PTPackage() {}
 
     public PTPackage(String packageId, String packageName, int packageDuration,
-                     double packagePrice, String description, String trainerId) {
+                     double packagePrice, String description, String trainerId, int sta) {
         this.packageId = packageId;
         this.packageName = packageName;
         this.packageDuration = packageDuration;
         this.packagePrice = packagePrice;
         this.description = description;
         this.trainerId = trainerId;
+        this.sta = sta;
     }
 
     public String getPackageId() {
@@ -64,5 +66,13 @@ public class PTPackage {
 
     public void setTrainerId(String trainerId) {
         this.trainerId = trainerId;
+    }
+
+    public int getSta() {
+        return sta;
+    }
+
+    public void setSta(int sta) {
+        this.sta = sta;
     }
 }
