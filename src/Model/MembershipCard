@@ -1,0 +1,27 @@
+public class MembershipCard {
+    private String cardId;
+    private String memberId;
+
+    public MembershipCard() {}
+
+    public MembershipCard(String cardId, String memberId) {
+        this.cardId = cardId;
+        this.memberId = memberId;
+    }
+
+    public String getCardId() {
+        return cardId;
+    }
+
+    public void setCardId(String cardId) {
+        this.cardId = cardId;
+    }
+
+    public String getMemberId() {
+        return memberId;
+    }
+
+    public void setMemberId(String memberId) {
+        this.memberId = memberId;
+    }
+}

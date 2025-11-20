@@ -1,15 +1,16 @@
 import java.sql.Date;
 
-public class MemberPackage {
+public class MemberPTPackage {
     private Date startDate;
     private Date endDate;
     private int sta;
     private String memberId;
     private String packageId;
 
-    public MemberPackage() {}
+    public MemberPTPackage() {}
 
-    public MemberPackage(Date startDate, Date endDate, int sta, String memberId, String packageId) {
+    public MemberPTPackage(Date startDate, Date endDate, int sta,
+                           String memberId, String packageId) {
         this.startDate = startDate;
         this.endDate = endDate;
         this.sta = sta;

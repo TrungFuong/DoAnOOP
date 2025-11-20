@@ -1,22 +1,27 @@
-package Model;
-
-import java.time.LocalDate;
-import java.util.List;
+import java.sql.Date;
 
 public class Trainer {
     private String trainerId;
     private String trainerName;
-    private boolean trainerGender;
-    private LocalDate dob;
     private String trainerEmail;
     private String trainerPhone;
-    private boolean trainerStatus;
-
-    private Account account;
-
-    private List<Session> sessions;
+    private Date trainerDOB;
+    private int trainerStatus;
+    private boolean trainerGender;
+    private String accountId;
 
     public Trainer() {}
+
+    public Trainer(String trainerId, String trainerName, String trainerEmail, String trainerPhone, Date trainerDOB, int trainerStatus, boolean trainerGender, String accountId) {
+        this.trainerId = trainerId;
+        this.trainerName = trainerName;
+        this.trainerEmail = trainerEmail;
+        this.trainerPhone = trainerPhone;
+        this.trainerDOB = trainerDOB;
+        this.trainerStatus = trainerStatus;
+        this.trainerGender = trainerGender;
+        this.accountId = accountId;
+    }
 
     public String getTrainerId() {
         return trainerId;
@@ -32,22 +37,6 @@ public class Trainer {
 
     public void setTrainerName(String trainerName) {
         this.trainerName = trainerName;
-    }
-
-    public LocalDate getDob() {
-        return dob;
-    }
-
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
-    }
-
-    public boolean isTrainerGender() {
-        return trainerGender;
-    }
-
-    public void setTrainerGender(boolean trainerGender) {
-        this.trainerGender = trainerGender;
     }
 
     public String getTrainerEmail() {
@@ -66,27 +55,35 @@ public class Trainer {
         this.trainerPhone = trainerPhone;
     }
 
-    public boolean isTrainerStatus() {
+    public Date getTrainerDOB() {
+        return trainerDOB;
+    }
+
+    public void setTrainerDOB(Date trainerDOB) {
+        this.trainerDOB = trainerDOB;
+    }
+
+    public int getTrainerStatus() {
         return trainerStatus;
     }
 
-    public void setTrainerStatus(boolean trainerStatus) {
+    public void setTrainerStatus(int trainerStatus) {
         this.trainerStatus = trainerStatus;
     }
 
-    public Account getAccount() {
-        return account;
+    public boolean isTrainerGender() {
+        return trainerGender;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
+    public void setTrainerGender(boolean trainerGender) {
+        this.trainerGender = trainerGender;
     }
 
-    public List<Session> getSessions() {
-        return sessions;
+    public String getAccountId() {
+        return accountId;
     }
 
-    public void setSessions(List<Session> sessions) {
-        this.sessions = sessions;
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
     }
 }

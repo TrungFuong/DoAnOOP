@@ -1,19 +1,28 @@
-package Model;
-
-import java.time.LocalDate;
+import java.sql.Date;
 
 public class Staff {
     private String staffId;
     private String staffName;
-    private boolean staffGender;
-    private LocalDate dob;
     private String staffPhone;
     private String staffEmail;
-    private String staffStatus;
-
-    private Account account;
+    private Date staffDOB;
+    private boolean staffGender;
+    private boolean staffStatus;
+    private String accountId;
 
     public Staff() {}
+
+    public Staff(String staffId, String staffName, String staffPhone, String staffEmail,
+                 Date staffDOB, boolean staffGender, boolean staffStatus, String accountId) {
+        this.staffId = staffId;
+        this.staffName = staffName;
+        this.staffPhone = staffPhone;
+        this.staffEmail = staffEmail;
+        this.staffDOB = staffDOB;
+        this.staffGender = staffGender;
+        this.staffStatus = staffStatus;
+        this.accountId = accountId;
+    }
 
     public String getStaffId() {
         return staffId;
@@ -29,22 +38,6 @@ public class Staff {
 
     public void setStaffName(String staffName) {
         this.staffName = staffName;
-    }
-
-    public boolean isStaffGender() {
-        return staffGender;
-    }
-
-    public void setStaffGender(boolean staffGender) {
-        this.staffGender = staffGender;
-    }
-
-    public LocalDate getDob() {
-        return dob;
-    }
-
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
     }
 
     public String getStaffPhone() {
@@ -63,20 +56,35 @@ public class Staff {
         this.staffEmail = staffEmail;
     }
 
-    public String getStaffStatus() {
+    public Date getStaffDOB() {
+        return staffDOB;
+    }
+
+    public void setStaffDOB(Date staffDOB) {
+        this.staffDOB = staffDOB;
+    }
+
+    public boolean isStaffGender() {
+        return staffGender;
+    }
+
+    public void setStaffGender(boolean staffGender) {
+        this.staffGender = staffGender;
+    }
+
+    public boolean isStaffStatus() {
         return staffStatus;
     }
 
-    public void setStaffStatus(String staffStatus) {
+    public void setStaffStatus(boolean staffStatus) {
         this.staffStatus = staffStatus;
     }
 
-    public Account getAccount() {
-        return account;
+    public String getAccountId() {
+        return accountId;
     }
 
-    public void setAccount(Account account) {
-        this.account = account;
+    public void setAccountId(String accountId) {
+        this.accountId = accountId;
     }
 }
-

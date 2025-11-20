@@ -1,21 +1,24 @@
-package Model;
-import java.time.LocalDate;
-import java.util.List;
+import java.sql.Date;
 
 public class Member {
     private String memberId;
     private String memberName;
-    private boolean memberGender;
-    private LocalDate dob;
     private String memberPhone;
+    private Date memberDOB;
     private String memberEmail;
-    private String memberAddress;
-    private String memberImages;
-    private String memberStatus;
-
-    private List<MemberPackage> memberPackages;
+    private String memberImage;
 
     public Member() {}
+
+    public Member(String memberId, String memberName, String memberPhone,
+                  Date memberDOB, String memberEmail, String memberImage) {
+        this.memberId = memberId;
+        this.memberName = memberName;
+        this.memberPhone = memberPhone;
+        this.memberDOB = memberDOB;
+        this.memberEmail = memberEmail;
+        this.memberImage = memberImage;
+    }
 
     public String getMemberId() {
         return memberId;
@@ -33,28 +36,20 @@ public class Member {
         this.memberName = memberName;
     }
 
-    public boolean getMemberGender() {
-        return memberGender;
-    }
-
-    public void setMemberGender(boolean memberGender) {
-        this.memberGender = memberGender;
-    }
-
-    public LocalDate getDob() {
-        return dob;
-    }
-
-    public void setDob(LocalDate dob) {
-        this.dob = dob;
-    }
-
     public String getMemberPhone() {
         return memberPhone;
     }
 
     public void setMemberPhone(String memberPhone) {
         this.memberPhone = memberPhone;
+    }
+
+    public Date getMemberDOB() {
+        return memberDOB;
+    }
+
+    public void setMemberDOB(Date memberDOB) {
+        this.memberDOB = memberDOB;
     }
 
     public String getMemberEmail() {
@@ -65,35 +60,11 @@ public class Member {
         this.memberEmail = memberEmail;
     }
 
-    public String getMemberAddress() {
-        return memberAddress;
+    public String getMemberImage() {
+        return memberImage;
     }
 
-    public void setMemberAddress(String memberAddress) {
-        this.memberAddress = memberAddress;
-    }
-
-    public String getMemberStatus() {
-        return memberStatus;
-    }
-
-    public void setMemberStatus(String memberStatus) {
-        this.memberStatus = memberStatus;
-    }
-
-    public String getMemberImages() {
-        return memberImages;
-    }
-
-    public void setMemberImages(String memberImages) {
-        this.memberImages = memberImages;
-    }
-
-    public List<MemberPackage> getMemberPackages() {
-        return memberPackages;
-    }
-
-    public void setMemberPackages(List<MemberPackage> memberPackages) {
-        this.memberPackages = memberPackages;
+    public void setMemberImage(String memberImage) {
+        this.memberImage = memberImage;
     }
 }
