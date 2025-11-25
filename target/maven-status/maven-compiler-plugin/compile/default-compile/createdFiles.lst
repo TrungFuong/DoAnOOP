@@ -1,0 +1,17 @@
+Test\TestDB.class
+DAO\GenericDAO.class
+Model\PTSession.class
+Model\PTPackage.class
+Model\Account.class
+Model\Staff.class
+Model\Member.class
+util\DBConnection.class
+Service\GenericService.class
+Model\Package.class
+Model\Sess.class
+Model\MembershipCard.class
+Model\Session.class
+Model\MemberPTPackage.class
+Model\MembershipPackage.class
+Model\MemberPackage.class
+Model\Trainer.class
