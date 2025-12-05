@@ -9,12 +9,12 @@ public class Member {
     private Date memberDOB;
     private String memberEmail;
     private String memberImage;
-    private int sta; // trạng thái hội viên
+    private boolean sta; 
 
     public Member() {}
 
     public Member(String memberId, String memberName, String memberPhone,
-                  Date memberDOB, String memberEmail, String memberImage, int sta) {
+                  Date memberDOB, String memberEmail, String memberImage, boolean sta) {
         this.memberId = memberId;
         this.memberName = memberName;
         this.memberPhone = memberPhone;
@@ -72,11 +72,11 @@ public class Member {
         this.memberImage = memberImage;
     }
 
-    public int getSta() {
+    public boolean getSta() {
         return sta;
     }
 
-    public void setSta(int sta) {
+    public void setSta(boolean sta) {
         this.sta = sta;
     }
 }

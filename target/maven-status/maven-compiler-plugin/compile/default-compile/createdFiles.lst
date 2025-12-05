@@ -24,8 +24,10 @@ Controller\BaseController.class
 util\DBConnection.class
 view\Calendar$1.class
 view\Login.class
+Controller\MemberController.class
 Controller\MembershipPackageController.class
 view\Package.class
 Controller\GenericController.class
 view\RegistPackage.class
 Model\Trainer.class
+DAO\MemberDAO.class

@@ -1,7 +1,9 @@
 D:\Currently working on\OOP\DoAnOOP\src\main\java\Controller\BaseController.java
 D:\Currently working on\OOP\DoAnOOP\src\main\java\Controller\GenericController.java
+D:\Currently working on\OOP\DoAnOOP\src\main\java\Controller\MemberController.java
 D:\Currently working on\OOP\DoAnOOP\src\main\java\Controller\MembershipPackageController.java
 D:\Currently working on\OOP\DoAnOOP\src\main\java\DAO\GenericDAO.java
+D:\Currently working on\OOP\DoAnOOP\src\main\java\DAO\MemberDAO.java
 D:\Currently working on\OOP\DoAnOOP\src\main\java\DAO\MembershipPackageDAO.java
 D:\Currently working on\OOP\DoAnOOP\src\main\java\Model\Account.java
 D:\Currently working on\OOP\DoAnOOP\src\main\java\Model\Member.java

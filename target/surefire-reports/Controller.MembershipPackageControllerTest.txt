@@ -1,4 +1,47 @@
 -------------------------------------------------------------------------------
 Test set: Controller.MembershipPackageControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.771 s -- in Controller.MembershipPackageControllerTest
+Tests run: 5, Failures: 3, Errors: 1, Skipped: 0, Time elapsed: 0.827 s <<< FAILURE! -- in Controller.MembershipPackageControllerTest
+Controller.MembershipPackageControllerTest.testCreate -- Time elapsed: 0.640 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Create package failed ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at Controller.MembershipPackageControllerTest.testCreate(MembershipPackageControllerTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Controller.MembershipPackageControllerTest.testFindById -- Time elapsed: 0.057 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: FindById should return data ==> expected: not <null>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:312)
+	at Controller.MembershipPackageControllerTest.testFindById(MembershipPackageControllerTest.java:41)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Controller.MembershipPackageControllerTest.testUpdate -- Time elapsed: 0.046 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "Model.MembershipPackage.getPackageName()" because "updated" is null
+	at Controller.MembershipPackageControllerTest.testUpdate(MembershipPackageControllerTest.java:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+Controller.MembershipPackageControllerTest.testGetAll -- Time elapsed: 0.023 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: List should not be empty ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at Controller.MembershipPackageControllerTest.testGetAll(MembershipPackageControllerTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
